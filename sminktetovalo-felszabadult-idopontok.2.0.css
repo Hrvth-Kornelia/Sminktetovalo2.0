@@ -1,0 +1,163 @@
+@font-face {
+  font-family: "DidotPro";
+  src:
+    url("webfont-type/font.woff2") format("woff2"),
+    url("webfont-type/font.woff") format("woff");
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+body{
+    background-color: #fbf9f7;
+    margin: 0;
+    padding: 0;
+    min-height: 100%;
+}
+.navbar{
+ display: flex;
+ align-items: center;
+ width: 100%;
+ height: 70px;
+ background:linear-gradient(to bottom, #e8e8e8, #f6f2f2);
+ box-shadow: 0px 3px 12px rgba(47, 47, 47, 0.318);
+ border-bottom: 1px solid rgb(242, 242, 242);
+ z-index: 2;
+
+}
+.bi-box-arrow-left{
+ color: #5b534d;
+ display: flex;
+ align-items: flex-start;
+ padding-left: 4px;
+ font-size: 21px;
+ padding-top: 3px;
+}
+.fooldal-cim{
+  display: flex;
+  padding-left: 10px;
+  align-items: flex-start;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 20px;
+  color: #5b534d;
+  letter-spacing: 1px;
+}
+.fooldal-cim-keret{
+  border: 1px solid #8c7259;
+  border-radius: 5px;
+  max-width: 220px;
+  display: flex;
+  flex-direction: row;
+  margin-left: 20px;
+  padding-left: 5px;
+  padding-right: 8px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
+.eden-salon-cim{
+  margin: 0 auto;
+  align-items: center;
+  font-family: "DidotPro";
+  font-size: 24px;
+  color: #5b534d;
+  letter-spacing: 2.4px;
+  text-transform: uppercase;
+}
+.bi-telephone{
+  margin-left: auto;
+  padding-right: 30px;
+  color: #8c7259;
+  font-size: 22px;
+}
+.bi-envelope-at-fill{
+  display: flex;
+  margin-left: auto;
+  padding-right: 50px;
+  color: #8c7259;
+  font-size: 22px;
+}
+a{
+ text-decoration: none;
+}
+.mainwallpaper{
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  overflow: hidden;
+}
+.mainwallpaper-img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 25%;
+}
+.container{
+  margin-top: 70px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+.szabad-idopont-doboz{
+  display: flex;
+}
+.idopont-datum{
+  letter-spacing: 0.7px;
+}
+.divider{
+  width: 1.1px;
+  height: 14px;
+  background: rgba(155, 143, 138, 0.45);
+  display: inline-block;
+  margin: 0 16px;
+  transform: translateY(2px);
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.idopont-ora{
+  letter-spacing: 0.8px;
+}
+.elerhetoseg-gombok{
+  display: flex;
+  box-sizing: border-box;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+.hivas-gomb,
+.uzenet-gomb{
+  width: 100%;
+  max-width: 130px;
+  padding-left: 15px;
+  height: 30px;
+  border-radius: 7px;
+}
+.uzenet-gomb{
+  background: linear-gradient(130deg ,#dfd7d1,#f8eae1,#e2d9ca) ;
+  border: 1px solid #eeddd2;
+  box-shadow: 0px 3px 8px rgba(141, 141, 141, 0.25);   
+}
+.hivas-gomb{
+  border: 1px solid rgb(189, 174, 134);
+}
+
+@media screen and( min-width: 320px) and (max-width:400px){
+
+    .container{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+.szabad-idopont-doboz{
+  justify-content: center;
+  align-items: center;
+}
+.idopont-datum{
+    padding-left: 15px;
+}
+.idopont-ora{
+    padding-left: 15px;
+}
+}

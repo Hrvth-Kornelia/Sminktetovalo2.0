@@ -1,0 +1,475 @@
+@font-face {
+  font-family: "DidotPro";
+  src:
+    url("webfont-type/font.woff2") format("woff2"),
+    url("webfont-type/font.woff") format("woff");
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+body{
+    background-color: #fbf9f7;
+    margin: 0;
+    padding: 0;
+    min-height: 100%;
+}
+.navbar{
+ display: flex;
+ align-items: center;
+ width: 100%;
+ height: 70px;
+ background:linear-gradient(to bottom, #e8e8e8, #f6f2f2);
+ box-shadow: 0px 3px 12px rgba(47, 47, 47, 0.318);
+ border-bottom: 1px solid rgb(242, 242, 242);
+ z-index: 2;
+
+}
+.bi-box-arrow-left{
+ color: #5b534d;
+ display: flex;
+ align-items: flex-start;
+ padding-left: 4px;
+ font-size: 21px;
+ padding-top: 3px;
+}
+.fooldal-cim{
+  display: flex;
+  padding-left: 10px;
+  align-items: flex-start;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 20px;
+  color: #5b534d;
+  letter-spacing: 1px;
+}
+.fooldal-cim-keret{
+  border: 1px solid #8c7259;
+  border-radius: 5px;
+  max-width: 220px;
+  display: flex;
+  flex-direction: row;
+  margin-left: 20px;
+  padding-left: 5px;
+  padding-right: 8px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
+.eden-salon-cim{
+  margin: 0 auto;
+  align-items: center;
+  font-family: "DidotPro";
+  font-size: 24px;
+  color: #5b534d;
+  letter-spacing: 2.4px;
+  text-transform: uppercase;
+}
+.bi-telephone{
+  margin-left: auto;
+  padding-right: 30px;
+  color: #8c7259;
+  font-size: 22px;
+}
+.bi-envelope-at-fill{
+  display: flex;
+  margin-left: auto;
+  padding-right: 50px;
+  color: #8c7259;
+  font-size: 22px;
+}
+a{
+ text-decoration: none;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+/* ❗ EZ FONTOS – ne legyen fehér háttér */
+body {
+  background: transparent;
+  font-family: Georgia, "Times New Roman", serif;
+}
+/* 🔥 HÁTTÉR KÉP */
+.wallpaper {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+}
+.wallpaper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* ❗ nincs fehér háttér */
+body {
+  font-family: Georgia, "Times New Roman", serif;
+}
+/* 🔥 TELJES HÁTTÉR */
+.hero {
+  width: 100%;
+  height: 100vh;
+  background-image: url("idopontfoglalo-wallpaperpage2.jfif "); /* EZ A TE KÉPED */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* 🔥 TARTALOM */
+.hero-content {
+  text-align: center;
+}
+/* ✨ LUXORIA */
+.marka-nev {
+  margin-top:-40px ;
+  font-size: 80px;
+  letter-spacing: 6px;
+  color: #6b6056;
+  margin-bottom: 10px;
+}
+/* ✨ VONAL */
+.elvalaszto-vonal {
+  width: 220px;
+  height: 1px;
+  background: rgba(201, 171, 123, 0.4);
+  margin: 0 auto 30px;
+}
+/* ✨ FŐ CÍM */
+.focim {
+  font-size: 40px;
+  line-height: 1.3;
+  letter-spacing: 1.3px;
+  color: #777272;
+  margin-bottom: 50px;
+  max-width: 800px;
+  width: 100%;
+}
+
+/* ✨ GOMB */
+.foglalas-gomb {
+  padding: 20px 60px;
+  border-radius: 999px;
+  border: none;
+  font-size: 28px;
+  cursor: pointer;
+  transition: 0.2s;
+   background: linear-gradient( 135deg, #f0f0f0, #ffffff, #f5f5f5
+    );
+    border: 2.5px solid rgba(255,255,255,0.3);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+    text-decoration: none;
+    color: #797163;
+    letter-spacing: 1.3px;
+}
+.foglalas-gomb:hover {
+  transform: translateY(-2px);
+}
+
+
+
+
+
+@media (min-width: 270px) and (max-width: 305px) {
+
+  .hero {
+    min-height: calc(100vh - 70px);
+    padding: 20px 14px;
+  }
+  .hero-content {
+    width: 100%;
+    text-align: center;
+  }
+  .marka-nev {
+    margin-top: -180px;
+    font-size: 34px;
+    letter-spacing: 3px;
+    margin-bottom: 10px;
+  }
+  .elvalaszto-vonal {
+    width: 120px;
+    margin: 0 auto 18px;
+  }
+  .focim {
+    font-size: 22px;
+    line-height: 1.4;
+    letter-spacing: 0.4px;
+    max-width: 95%;
+    width: 100%;
+    margin: 0 auto 28px;
+  }
+  .foglalas-gomb {
+    padding: 12px 22px;
+    font-size: 16px;
+    width: 100%;
+    max-width: 240px;
+  }
+  .eden-salon-cim {
+    font-size: 15px;
+    letter-spacing: 1px;
+  }
+  .fooldal-cim {
+    font-size: 12.5px;
+    padding-left: -10px;
+  }
+  .fooldal-cim-keret {
+    padding: 3.5px 3px;
+    margin-left: 10px;
+  }
+  .bi-box-arrow-left {
+    font-size: 12px;
+  }
+  .bi-telephone{
+  font-size: 12px;
+  padding-right: 10px;
+}
+.bi-envelope-at-fill{
+  font-size: 12px;
+  padding-right: 15px;
+}
+}
+
+
+
+
+@media (min-width: 305px) and (max-width: 359px) {
+
+  .hero {
+    min-height: calc(100vh - 70px);
+    padding: 20px 14px;
+  }
+  .hero-content {
+    width: 100%;
+    text-align: center;
+  }
+  .marka-nev {
+    margin-top: -180px;
+    font-size: 34px;
+    letter-spacing: 3px;
+    margin-bottom: 10px;
+  }
+  .elvalaszto-vonal {
+    width: 120px;
+    margin: 0 auto 18px;
+  }
+  .focim {
+    font-size: 22px;
+    line-height: 1.4;
+    letter-spacing: 0.4px;
+    max-width: 95%;
+    width: 100%;
+    margin: 0 auto 28px;
+  }
+  .foglalas-gomb {
+    padding: 12px 22px;
+    font-size: 16px;
+    width: 100%;
+    max-width: 240px;
+  }
+  .eden-salon-cim {
+    font-size: 17px;
+    letter-spacing: 1.4px;
+  }
+  .fooldal-cim {
+    font-size: 13.5px;
+    padding-left: -10px;
+  }
+  .fooldal-cim-keret {
+    padding: 3.5px 4.5px;
+    margin-left: 10px;
+  }
+  .bi-box-arrow-left {
+    font-size: 14px;
+  }
+  .bi-telephone{
+  font-size: 14px;
+  padding-right: 10px;
+}
+.bi-envelope-at-fill{
+  font-size: 14px;
+  padding-right: 15px;
+}
+}
+
+
+/* =========================
+   360px – 479px
+   normál telefonok
+========================= */
+@media (min-width: 359px) and (max-width: 479px) {
+
+  .hero {
+    min-height: calc(100vh - 70px);
+    padding: 24px 18px;
+  }
+
+  .hero-content {
+    width: 100%;
+    text-align: center;
+  }
+
+  .marka-nev {
+    margin-top: -180px;
+    font-size: 42px;
+    letter-spacing: 4px;
+    margin-bottom: 12px;
+  }
+
+  .elvalaszto-vonal {
+    width: 145px;
+    margin: 0 auto 20px;
+  }
+
+  .focim {
+    font-size: 28px;
+    line-height: 1.38;
+    letter-spacing: 0.6px;
+    max-width: 92%;
+    width: 100%;
+    margin: 0 auto 32px;
+  }
+
+  .foglalas-gomb {
+    padding: 14px 28px;
+    font-size: 18px;
+    width: 100%;
+    max-width: 280px;
+  }
+
+  .eden-salon-cim {
+    font-size: 18px;
+    letter-spacing: 2px;
+  }
+
+  .fooldal-cim {
+    font-size: 14.5px;
+  }
+
+  .fooldal-cim-keret {
+    padding: 4px 7px;
+    margin-left: 10px;
+  }
+
+  .bi-box-arrow-left {
+    font-size: 16px;
+  }
+   .bi-telephone{
+  font-size: 15px;
+  padding-right: 10px;
+}
+.bi-envelope-at-fill{
+  font-size: 15px;
+  padding-right: 15px;
+}
+}
+
+
+/* =========================
+   480px – 767px
+   nagy telefon / kis tablet
+========================= */
+@media (min-width: 480px) and (max-width: 767px) {
+
+  .hero {
+    min-height: calc(100vh - 70px);
+    padding: 30px 24px;
+  }
+
+  .hero-content {
+    width: 100%;
+    text-align: center;
+  }
+
+  .marka-nev {
+    margin-top: -90px;
+    font-size: 54px;
+    letter-spacing: 5px;
+    margin-bottom: 14px;
+  }
+
+  .elvalaszto-vonal {
+    width: 170px;
+    margin: 0 auto 24px;
+  }
+
+  .focim {
+    font-size: 34px;
+    line-height: 1.35;
+    letter-spacing: 0.8px;
+    max-width: 88%;
+    width: 100%;
+    margin: 0 auto 36px;
+  }
+
+  .foglalas-gomb {
+    padding: 16px 34px;
+    font-size: 20px;
+    width: 100%;
+    max-width: 320px;
+  }
+
+  .eden-salon-cim {
+    font-size: 18px;
+    letter-spacing: 2.5px;
+  }
+
+  .fooldal-cim {
+    font-size: 16px;
+  }
+
+  .fooldal-cim-keret {
+    padding: 6px 11px;
+  }
+
+  .bi-box-arrow-left {
+    font-size: 18px;
+  }
+}
+
+
+/* =========================
+   768px – 1024px
+   tablet
+========================= */
+@media (min-width: 768px) and (max-width: 1024px) {
+
+  .hero {
+    min-height: calc(100vh - 70px);
+    padding: 40px 30px;
+  }
+
+  .hero-content {
+    width: 100%;
+    text-align: center;
+  }
+
+  .marka-nev {
+    margin-top: 0px;
+    font-size: 66px;
+    letter-spacing: 6px;
+    margin-bottom: 16px;
+  }
+
+  .elvalaszto-vonal {
+    width: 200px;
+    margin: 0 auto 28px;
+  }
+
+  .focim {
+    font-size: 40px;
+    line-height: 1.32;
+    max-width: 760px;
+    width: 100%;
+    margin: 0 auto 40px;
+  }
+
+  .foglalas-gomb {
+    padding: 18px 40px;
+    font-size: 22px;
+    max-width: 360px;
+  }
+}

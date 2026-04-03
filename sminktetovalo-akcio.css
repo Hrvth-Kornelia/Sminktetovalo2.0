@@ -1,0 +1,479 @@
+@font-face {
+  font-family: "DidotPro";
+  src:
+    url("webfont-type/font.woff2") format("woff2"),
+    url("webfont-type/font.woff") format("woff");
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+body{
+    background-color: #fbf9f7;
+    margin: 0;
+    padding: 0;
+    min-height: 100%;
+}
+.navbar{
+ display: flex;
+ align-items: center;
+ width: 100%;
+ height: 70px;
+ background:linear-gradient(to bottom, #e8e8e8, #f6f2f2);
+ box-shadow: 0px 3px 12px rgba(47, 47, 47, 0.318);
+ border-bottom: 1px solid rgb(242, 242, 242);
+ z-index: 2;
+}
+.szolgaltatasok-es-akciok-cim{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "DidotPro";
+  font-size: 24px;
+  color: #867b72;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+.bi-box-arrow-left{
+ color: #5b534d;
+ display: flex;
+ align-items: flex-start;
+ padding-left: 4px;
+ font-size: 21px;
+ padding-top: 3px;
+}
+.fooldal-cim{
+  display: flex;
+  padding-left: 10px;
+  align-items: flex-start;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 20px;
+  color: #5b534d;
+  letter-spacing: 1px;
+}
+.fooldal-cim-keret{
+  border: 1px solid #8c7259;
+  border-radius: 5px;
+  max-width: 220px;
+  display: flex;
+  flex-direction: row;
+  margin-left: 20px;
+  padding-left: 5px;
+  padding-right: 8px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
+.eden-salon-cim{
+  margin: 0 auto;
+  align-items: center;
+  font-family: "DidotPro";
+  font-size: 24px;
+  color: #5b534d;
+  letter-spacing: 2.4px;
+  text-transform: uppercase;
+}
+.bi-telephone{
+  margin-left: auto;
+  padding-right: 30px;
+  color: #8c7259;
+  font-size: 22px;
+}
+.bi-envelope-at-fill{
+  display: flex;
+  margin-left: auto;
+  padding-right: 50px;
+  color: #8c7259;
+  font-size: 22px;
+}
+a{
+ text-decoration: none;
+}
+.fo-container{
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  gap: 80px;
+  margin-top: 70px;
+  box-sizing: border-box;
+  grid-template-columns: repeat(2, minmax(0, 600px));
+  animation: fadein 1.6s ease-out forwards;
+  }
+  @keyframes fadein{
+    from{
+      opacity: 0;
+    }
+    to{
+      opacity: 1;
+    }
+  }
+.arlista-container{
+  max-width: 600px;
+  width: 100%;
+  border-radius: 10px;
+  box-sizing: border-box; 
+}
+.kategoria{
+  font-size: 35px;
+  color: #6b3f4f;
+  font-weight: 500;
+  padding-bottom: 35px;
+  padding-left: 35px;
+  padding-top: 20px;
+  font-family: "DidotPro";
+  display: inline-block;
+  position: relative;
+  letter-spacing: 2.8px;
+  text-transform: uppercase;
+    
+}
+.kategoria::before,
+.kategoria::after{
+  content: "";
+  position: absolute;
+  top: 44%;
+  width: 20px; 
+  height: 0.5px;   
+  background: rgb(156,105,105);
+}
+.kategoria::before{
+  left: 6px;   /* bal oldali távolság */
+}
+.kategoria::after{
+  right: -25px;  /* jobb oldali távolság */
+}
+.arak-alkalom-szerint{
+  display: flex;
+  justify-content: space-between;
+}
+.elso-alkalom{
+  font-size: 19px;
+  padding-bottom: 30px;
+  padding-left: 20px;  
+  letter-spacing: 1.2px;
+  font-weight: 500;
+  color: #2f2f2f;
+}
+.hr-decor{
+  width: 98%;
+  height: 0.5px;
+  border: none;
+  background-color:rgb(148, 148, 148);
+  margin-top: -20px;
+  margin-bottom: 20px;
+}
+.hat-honapon-bellul,
+.hat-honap-utan,
+.egy-ev-utan{
+  font-size: 19px;
+  padding-bottom: 12px;
+  padding-left: 20px;
+  color: rgb(54, 54, 54);
+}
+.ar1,
+.ar2,
+.ar3,
+.ar4,
+.ar5,
+.ar6,
+.ar7,
+.ar8,
+.ar9,
+.ar10,
+.ar11,
+.ar12,
+.ar13,
+.ar14,
+.ar15,
+.ar16{
+  font-size: 19px;
+  padding-right: 20px;
+  color: #9d9d9d;
+  font-family: "Playfair Display" , serif;
+  margin-left: auto;
+}
+.ar2,
+.ar3,
+.ar6,
+.ar7,
+.ar9{
+  text-decoration: line-through;
+}
+.akcio{
+  color: #8e3a4f ;
+  font-size: 18.5px;
+  font-weight: 500;
+  padding-right: 20px;
+    
+}
+
+
+@media screen and (min-width: 300px) and (max-width:400px) {     
+
+  .fooldal-cim{
+    font-size: 15.6px;
+    padding-left: 5px;
+  }
+  .fooldal-cim-keret{
+    margin-left: 9px;
+    padding: 3px;
+  }
+  .bi-box-arrow-left{
+    font-size: 15px;
+    padding-left: 5px;
+  }
+  .eden-salon-cim{
+    font-size: 18.5px;
+  }
+  .bi-telephone{
+    font-size: 15px;
+    padding-right: 12px;
+  }
+  .bi-envelope-at-fill{
+    padding-right: 17px;
+    font-size: 15px;
+  }
+    .szolgaltatasok-es-akciok-cim{
+    margin: 70px auto;
+    margin-bottom: 0px;
+    text-align: center;
+    font-size: 17px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 40px;
+  }
+    .fo-container{
+    grid-template-columns: 1fr;
+    margin-top: 0px;
+    padding-top: 20px;
+    gap: 30px;
+  }
+    .arlista-container{
+    width: 100%;
+    padding-left:  10px;
+    padding-right: 10px;
+    box-sizing: border-box;
+    }
+    .kategoria{
+    font-size: 22px;
+    }
+    .elso-alkalom{
+    font-size: 16.5px;
+    }
+    .hat-honapon-bellul,
+    .hat-honap-utan,
+    .egy-ev-utan{
+    font-size: 15px;
+    }
+    .ar1,
+    .ar2,
+    .ar3,
+    .ar4,
+    .ar5,
+    .ar6,
+    .ar7,
+    .ar8,
+    .ar9,
+    .ar10,
+    .ar11,
+    .ar12,
+    .ar13,
+    .ar14,
+    .ar15,
+    .ar16{
+        font-size: 17px;
+    }
+    .akcio{
+        font-size: 14.5px;
+  
+    }
+}
+
+
+@media screen and (min-width: 401px) and (max-width:830px) {
+   .navbar{
+    position: sticky;
+    top: 0;
+    isolation: isolate;
+  }
+   .fooldal-cim{
+    font-size: clamp(16px,2.2vw,18px);
+    padding-left: 5px;
+    padding-right: 3px;
+  }
+  .fooldal-cim-keret{
+    margin-left: 9px;
+    padding: 3px;
+  }
+  .bi-box-arrow-left{
+    font-size: clamp(20px,2.5vw,22px);
+    padding-left: 5px;
+  }
+  .eden-salon-cim{
+    font-size:clamp(23px,2.6vw,24px);
+  }
+  .bi-telephone{
+    font-size: clamp(20px,2.5vw,22px);
+    padding-right: 12px;
+  }
+  .bi-envelope-at-fill{
+    padding-right: 20px;
+    font-size: clamp(20px,2.5vw,22px);
+  }
+  .szolgaltatasok-es-akciok-cim{
+    display: flex;
+    margin-top: 70px;
+    font-size: clamp(18px,2.4vw, 22px);
+    letter-spacing: clamp(1.6px,0.35vw,2.4px);
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 40px;
+    margin-bottom: 0px;
+  }
+    .fo-container{
+   grid-template-columns: 1fr;
+   margin-top: 0px;
+   padding-top: 20px;
+   gap: 30px;
+  }
+    .arlista-container{
+    width: 95%;
+    margin: 0 auto;
+    padding-left:  10px;
+    padding-right: 10px;
+    box-sizing: border-box;
+    }
+    .kategoria{
+    font-size: clamp(22px,2.8vw,26px);
+    }
+    .elso-alkalom{
+    font-size: clamp(16px,2.1vw,18px);
+    }
+    .hat-honapon-bellul,
+    .hat-honap-utan,
+    .egy-ev-utan{
+    font-size:clamp(15px,2vw,17px);
+    }
+  
+    .ar1,
+    .ar2,
+    .ar3,
+    .ar4,
+    .ar5,
+    .ar6,
+    .ar7,
+    .ar8,
+    .ar9,
+    .ar10,
+    .ar11,
+    .ar12,
+    .ar13,
+    .ar14,
+    .ar15,
+    .ar16{
+    font-size:clamp(17px,2.2vw,19px);
+    }
+    .akcio{
+    font-size:clamp(15.5px,2.3vw,20px); 
+    }
+}
+
+
+@media screen and (min-width: 831px) and (max-width:1199px) {
+  .navbar{
+    position: sticky;
+    top: 0;
+  }
+  .fo-container{
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+  }
+  .arlista-container{
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  /* ===== Címsorok ===== */
+  .fooldal-cim{
+    font-size: clamp(18px, 1.5vw, 20px);
+  }
+  .eden-salon-cim{
+    font-size: clamp(25px, 2vw, 28px);
+  }
+
+  .szolgaltatasok-es-akciok-cim{
+    font-size: clamp(20px, 1.8vw, 24px);
+    letter-spacing: clamp(2px, 0.3vw, 3px);
+  }
+
+  .kategoria{
+    font-size: clamp(24px, 1.9vw, 28px);
+  }
+
+  /* ===== Szöveg sorok ===== */
+
+  .elso-alkalom{
+    font-size: clamp(17px, 1.4vw, 19px);
+  }
+
+  .hat-honapon-belul,
+  .hat-honap-utan,
+  .egy-ev-utan{
+    font-size: clamp(16px, 1.3vw, 18px);
+  }
+
+  .ar{
+    font-size: clamp(18px, 1.4vw, 20px);
+  }
+
+  /* ===== Ikonok ===== */
+
+  .bi-telephone,
+  .bi-envelope-at-fill,
+  .bi-box-arrow-left{
+    font-size: clamp(22px, 2.7vw, 24px);
+}
+}
+
+@media screen and (min-width: 1200px) {
+
+  /* tartalom szélesség korlát + középre */
+  .arlista-container{
+    max-width: 1100px;
+    margin: 0 auto;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  /* két oszlop marad, de levegősebb */
+  .fo-container{
+    gap: 70px;
+  }
+
+  /* opcionális: nagyon minimális tipó emelés */
+  .eden-salon-cim{
+    font-size: clamp(28px, 1.6vw, 32px);
+  }
+
+  .szolgaltatasok-es-akciok-cim{
+    font-size: clamp(22px, 1.4vw, 26px);
+    letter-spacing: clamp(2.4px, 0.25vw, 3.2px);
+  }
+
+  .kategoria{
+    font-size: clamp(26px, 1.5vw, 30px);
+  }
+
+  .elso-alkalom{
+    font-size: clamp(18px, 1.1vw, 20px);
+  }
+
+  .hat-honapon-belul,
+  .hat-honap-utan,
+  .egy-ev-utan{
+    font-size: clamp(16.5px, 1vw, 18px);
+  }
+
+  .ar{
+    font-size: clamp(18px, 1.1vw, 20px);
+  }
+}
