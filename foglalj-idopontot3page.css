@@ -1,0 +1,322 @@
+@font-face {
+  font-family: "DidotPro";
+  src:
+  url("webfont-type/font.woff2") format("woff2"),
+  url("webfont-type/font.woff") format("woff");
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+body{
+  background-color: #fbf9f7;
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+}
+.navbar{
+ display: flex;
+ position: relative;
+ align-items: center;
+ justify-content: center;
+ width: 100%;
+ height: 70px;
+ background:linear-gradient(to bottom, #e8e8e8, #f6f2f2);
+ box-shadow: 0px 3px 12px rgba(47, 47, 47, 0.318);
+ border-bottom: 1px solid rgb(242, 242, 242);
+ z-index: 2;
+
+}
+.fooldal-cim-keret{
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 10px;
+  border: 1px solid #8c7259;
+  border-radius: 5px;
+  text-decoration: none;
+  color: #5b534d;
+}
+.fooldal-cim{
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 18px;
+  color: #5b534d;
+  letter-spacing: 1px;
+  line-height: 1;
+}
+.bi-box-arrow-left{
+  font-size: 18px;
+  color: #5b534d;
+  line-height: 1;
+}
+.eden-salon-cim{
+  position: absolute;
+  font-family:"DidotPro";
+  font-size: 24px;
+  color: #5b534d;
+  letter-spacing: 2.4px;
+  text-transform: uppercase;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+a{
+ text-decoration: none;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: transparent;
+}
+.wallpaper {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+}
+.wallpaper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.95) blur(1px);
+
+}
+.bejelentkezo-felulet-conatiner{
+    position: relative;
+    display: flex;
+    margin: 130px auto;
+    align-items: center;
+    flex-direction: column;
+    max-width: 400px;
+    width: 100%;
+    height: 270px;
+    background: rgba(255, 251, 251, 0.25) 80%;
+    background: rgba(255, 255, 255, 0.348) 20%;
+    backdrop-filter: blur(3px);
+    box-sizing: border-box;
+    border-radius: 20px;
+    border: 1.5px solid rgb(255, 233, 233);
+    box-shadow: 0px 4px 20px rgb(145, 145, 145);
+}
+.bi-x-lg{
+    display: flex;
+    position: absolute;
+    right: 15px;
+    top: 10px;
+}
+.bejelentkezes-cim{
+    font-size: 23px;
+    margin-top: 40px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #5a4a3c;
+}
+.rovid-leiras{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #5a4a3c; 
+    font-size: 16px;
+}
+.bejelentkezes-gomb{
+    max-width: 270px;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    box-sizing: border-box;
+    border: 3px double rgb(174, 155, 155);
+    padding-top: 7px;
+    padding-bottom: 7px; 
+    border-radius: 12px;
+    margin-top: 30px;
+    color: rgb(126, 105, 86);
+    background:linear-gradient(135deg, #efddda ,#ece2dc,#f1e1dd);
+    justify-content: space-between;
+}
+.googleicon{
+    max-width: 20px;
+    width: 100%;
+    height: 20px;
+    height: 100%;
+    padding-bottom: 4px;
+}
+.divider{
+    border: none;
+    height: 1px;
+    max-width: 300px;
+    width: 100%;
+    background-color: #766969;
+    position: absolute;
+    top: 45%;
+}
+
+
+/* 📱 270px-től (alap mobil) */
+@media screen and (min-width:270px) and (max-width:320px) {
+ .fooldal-cim{
+     font-size: clamp(14px, 3.4vw, 17px);
+  }
+  .fooldal-cim-keret{
+    max-width: 130px;
+    padding: 6px;
+  }
+  .eden-salon-cim{
+     font-size: clamp(16px, 4.5vw, 22px);
+     letter-spacing: 2px;
+     display: none;
+  }
+  .bi-box-arrow-left{
+     padding-left: 5px;
+     font-size: clamp(13px, 3.3vw, 17px);
+  }
+  .bejelentkezo-felulet-conatiner {
+    max-width: 230px;
+    height: 210px;
+    padding: 20px 15px;
+  }
+  .bejelentkezes-cim {
+    font-size: 18px;
+    margin-top: 20px;
+  }
+  .rovid-leiras {
+    font-size: 13px;
+    text-align: center;
+  }
+  .divider{
+    max-width: 80%;
+  }
+  .bejelentkezes-gomb {
+    font-size: 13px;
+    margin-top: 10px;
+  }
+}
+
+
+/* 📱 320px+ */
+@media screen and (min-width:320px) and (max-width:375px) {
+
+  .fooldal-cim{
+     font-size: clamp(15px, 3.6vw, 18px);
+  }
+  .fooldal-cim-keret{
+    max-width: 130px;
+    padding: 6px;
+  }
+  .eden-salon-cim{
+     font-size: clamp(16px, 4.5vw, 22px);
+     letter-spacing: 2px;
+     display: none;
+  }
+  .bi-box-arrow-left{
+     padding-left: 5px;
+     font-size: clamp(14px, 3.5vw, 18px);
+  }
+  .bejelentkezo-felulet-conatiner {
+    max-width: 270px;
+    height: 240px;
+  }
+  .bejelentkezes-cim {
+    font-size: 20px;
+  }
+  .rovid-leiras {
+    font-size: 14px;
+  }
+  .divider{
+    max-width: 80%;
+    top: 46%
+  }
+  .bejelentkezes-gomb {
+    font-size: 14px;
+    width: 85%;
+    margin-top: 20px;
+  }
+}
+
+
+/* 📱 375px+ */
+@media screen and (min-width:375px) and (max-width:425px)  {
+ .fooldal-cim{
+     font-size: clamp(15px, 3.6vw, 18px);
+  }
+  .fooldal-cim-keret{
+    max-width: 130px;
+    padding: 6px;
+  }
+  .eden-salon-cim{
+     font-size: clamp(16px, 4.5vw, 22px);
+     letter-spacing: 2px;
+     display: block;
+     left: 54%;
+  }
+  .bi-box-arrow-left{
+     padding-left: 5px;
+     font-size: clamp(14px, 3.5vw, 18px);
+  }
+  .bejelentkezo-felulet-conatiner {
+    max-width: 300px;
+    height: 250px;
+  }
+  .bejelentkezes-cim {
+    font-size: 22px;
+  }
+  .rovid-leiras {
+    font-size: 15px;
+  }
+  .bejelentkezes-gomb {
+    font-size: 15px;
+  }
+  .divider{
+    width: 80%;
+  }
+}
+
+
+/* 📱 425px+ */
+@media screen and (min-width:425px) and (max-width:500px)  {
+  .fooldal-cim{
+     font-size: clamp(15px, 3.6vw, 18px);
+  }
+  .fooldal-cim-keret{
+    max-width: 130px;
+    padding: 6px;
+  }
+  .eden-salon-cim{
+     font-size: clamp(16px, 4.5vw, 22px);
+     letter-spacing: 2px;
+     display: block;
+     left: 54%;
+  }
+  .bi-box-arrow-left{
+     padding-left: 5px;
+     font-size: clamp(14px, 3.5vw, 18px);
+  }
+  .bejelentkezo-felulet-conatiner {
+    max-width: 330px;
+  }
+  .bejelentkezes-cim {
+    font-size: 23px;
+  }
+  .rovid-leiras {
+    font-size: 16px;
+  }
+  .divider{
+    width: 80%;
+  }
+}
+
+
+/* 📱 500px+ */
+@media screen and (min-width:500px) and (max-width:600px)  {
+  .bejelentkezo-felulet-conatiner {
+    max-width: 360px;
+  }
+
+  .bejelentkezes-cim {
+    font-size: 24px;
+  }
+}
+
+
+
