@@ -1,0 +1,298 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: Georgia, "Times New Roman", serif;
+}
+/* háttér */
+.wallpaper {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+}
+.wallpaper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.95) blur(3px);
+}
+/* wrapper */
+.foglalasok-wrapper {
+  width: 100%;
+}
+/* lista */
+.foglalasok-lista {
+  width: 100%;
+  max-width: 550px;
+  margin: 150px auto 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+/* kártya */
+.foglalas-kartya {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.72);
+  border: 1px solid rgba(230, 216, 204, 0.95);
+  box-shadow:
+  0 8px 18px rgba(84, 68, 58, 0.10),
+  inset 0 1px 0 rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(4px);
+}
+/* BAL OLDAL */
+.ido-blokk {
+  width: 90px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+/* KÖZÉP */
+.adat-blokk {
+  flex: 1;
+  height: 100%;
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+/* SZÖVEGEK */
+.foglalt-ido {
+  font-size: 24px;
+  color: #3f342f;
+}
+.foglalasi-idotartam {
+  font-size: 19px;
+  color: #4e433d;
+}
+.szolgaltatas-nev {
+  font-size: 22px;
+  color: #4a3f39;
+}
+.felhasznalonev {
+  font-size: 18px;
+  color: #5c514b;
+}
+.elvalaszto-vonal{
+  width: 1px;
+  height: 62px;
+  background: rgba(170, 150, 138, 0.45);
+  flex-shrink: 0;
+}
+/* GOMB */
+.torles-gomb {
+  width: 120px;
+  height: 40px;
+  margin-right: 15px;
+  border-radius: 20px;
+  border: 1px solid rgba(193, 169, 146, 0.95);
+  background: linear-gradient(
+  180deg,
+  rgba(250, 245, 239, 0.98),
+  rgba(240, 229, 219, 0.96)
+  );
+  font-size: 19px;
+  color: #5d4f46;
+  cursor: pointer;
+  box-shadow:
+  0 6px 14px rgba(95, 76, 62, 0.10),
+  inset 0 1px 0 rgba(255, 255, 255, 0.85);
+  transition: 0.2s;
+}
+.torles-gomb:hover {
+  transform: translateY(-1px);
+}
+
+
+
+/* =========================
+   270px - 360px
+========================= */
+@media (min-width: 270px) and (max-width: 360px) {
+
+  .foglalasok-wrapper {
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+ .foglalasok-lista {
+    width: 100%;
+    max-width: 100%;
+    gap: 14px;
+  }
+  .foglalas-kartya {
+    width: 100%;
+    min-height: 145px;
+    height: auto;
+    border-radius: 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    padding-top: 14px;
+    padding-bottom: 12px;
+    padding-left: 0;
+    margin-left: 0;
+  }
+  /* idő + időtartam egy sorban */
+  .ido-blokk {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    text-align: left;
+    justify-content: flex-start;
+    padding-left: 15px;
+  }
+  .foglalt-ido {
+    font-size: 21px;
+  }
+  .foglalasi-idotartam {
+    font-size: 15px;
+  }
+  .elvalaszto-vonal {
+    display: none;
+  }
+  .adat-blokk {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-top: 10px;
+  }
+  .szolgaltatas-nev {
+    font-size: 18px;
+    letter-spacing: 1.5px;
+  }
+  .felhasznalonev {
+    font-size: 15px;
+  }
+  .torles-gomb {
+    width: 90px;
+    height: 30px;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: 10;
+    font-size: 15px;
+  }
+}
+
+
+
+
+/* =========================
+   270px - 340px
+========================= */
+@media (min-width: 360px) and (max-width: 460px) {
+
+  .foglalasok-wrapper {
+    padding-left: 23px;
+    padding-right: 23px;
+  }
+.foglalasok-lista {
+    width: 100%;
+    max-width: 100%;
+    gap: 14px;
+  }
+  .foglalas-kartya {
+    width: 100%;
+    min-height: 145px;
+    height: auto;
+    border-radius: 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    padding-top: 14px;
+    padding-bottom: 12px;
+    padding-left: 0;
+    margin-left: 0;
+  }
+  /* idő + időtartam egy sorban */
+  .ido-blokk {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    text-align: left;
+    justify-content: flex-start;
+    padding-left: 15px;
+  }
+  .foglalt-ido {
+    font-size: 21px;
+  }
+  .foglalasi-idotartam {
+    font-size: 15px;
+  }
+  .elvalaszto-vonal {
+    display: none;
+  }
+  .adat-blokk {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-top: 10px;
+   
+  }
+  .szolgaltatas-nev {
+    font-size: 18.5px;
+    letter-spacing: 1.5px;
+  }
+  .felhasznalonev {
+    font-size: 16px;
+  }
+  .torles-gomb {
+    width: 150px;
+    height: 30px;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: 10;
+    font-size: 15px;
+  }
+}
+
+@media (min-width: 461px) {
+
+  .foglalasok-wrapper {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .foglalas-kartya {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .ido-blokk {
+    display: flex;
+    flex-direction: column;
+    padding-left: 0px;
+  }
+  .adat-blokk {
+    padding-left: 15px;
+  }
+  .torles-gomb {
+    margin-left: 20px;
+    font-size: 16px;
+    width: 80px;
+  }
+   .foglalt-ido {
+    font-size: 20px;
+  }
+  .foglalasi-idotartam {
+    font-size: 17px;
+  }
+   .szolgaltatas-nev {
+    font-size: 18px;
+    letter-spacing: 1.2px;
+  }
+  .felhasznalonev {
+    font-size: 16px;
+  }
+}
