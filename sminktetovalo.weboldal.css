@@ -1,0 +1,286 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #faf7f5;
+  color: #3f3836;
+  font-family: Georgia, 'Times New Roman', serif;
+}
+
+.fejlec {
+  min-height: 55vh;
+  background:
+    linear-gradient(rgba(70, 55, 45, .35), rgba(70, 55, 45, .35)),
+    url("wallpaper.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 4rem 2rem;
+}
+
+.fejlec-szoveg {
+  color: white;
+}
+
+.fejlec-szoveg p,
+.kis-cim {
+  letter-spacing: .35rem;
+  text-transform: uppercase;
+  color: #9a7b61;
+  font-size: .9rem;
+  margin-bottom: 1rem;
+}
+
+.fejlec-szoveg h1 {
+  font-size: clamp(3rem, 8vw, 7rem);
+  font-weight: 400;
+}
+
+.fejlec-szoveg span {
+  font-size: 1.3rem;
+}
+
+.oldal {
+  width: 92%;
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 6rem 0;
+}
+
+.bemutatkozo-kartya {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+  background: #fff;
+  padding: 4rem;
+  border-radius: 2rem;
+  box-shadow: 0 2rem 5rem rgba(70, 55, 45, .12);
+  margin-bottom: 7rem;
+}
+
+.kep-doboz,
+.szoveg-doboz {
+  width: 50%;
+}
+
+.kep-doboz img {
+  width: 100%;
+  height: 540px;
+  object-fit: cover;
+  object-position: center 25%;
+  
+  border-radius: 1.5rem;
+}
+
+.nagy-cim {
+  font-size: clamp(2rem, 4vw, 4rem);
+  line-height: 1.1;
+  margin-bottom: 1.5rem;
+}
+
+.leiras,
+.info-kartya p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #5f5754;
+}
+
+.gombok {
+  display: flex;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.gombok a {
+  text-decoration: none;
+  color: white;
+  background: #8a6f5a;
+  padding: .9rem 1.5rem;
+  border-radius: 999px;
+}
+
+.gombok a:nth-child(2) {
+  background: transparent;
+  color: #8a6f5a;
+  border: 1px solid #8a6f5a;
+}
+
+.kozep {
+  text-align: center;
+}
+
+.galeria {
+  margin-bottom: 7rem;
+}
+
+.kepek {
+  display: flex;
+  gap: 1.4rem;
+  margin-top: 3rem;
+}
+
+.kepek img {
+  width: 33.333%;
+  height: 360px;
+  object-fit: cover;
+  border-radius: 1.4rem;
+  box-shadow: 0 1rem 2rem rgba(70, 55, 45, .12);
+}
+
+.info {
+  background: #eee6df;
+  padding: 4rem;
+  border-radius: 2rem;
+}
+
+.info-kartyak {
+  display: flex;
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.info-kartya {
+  width: 33.333%;
+  background: #fff;
+  padding: 2rem;
+  border-radius: 1.4rem;
+}
+
+.info-kartya span {
+  color: #9a7b61;
+  font-size: 1.4rem;
+}
+
+.kartya-cim {
+  margin: 1rem 0;
+  font-size: 1.6rem !important;
+  color: #3f3836 !important;
+}
+
+.bizalom-resz {
+  margin-bottom: 7rem;
+}
+
+.bizalom-kartya {
+  background: #fff;
+  padding: 4rem;
+  border-radius: 2rem;
+  box-shadow: 0 2rem 5rem rgba(70, 55, 45, .12);
+  margin-top: 3rem;
+}
+
+.bizalom-szoveg {
+  max-width: 700px;
+  margin: 0 auto 3rem;
+  text-align: center;
+}
+
+.bizalom-szoveg p:last-child {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #5f5754;
+}
+
+.bizalom-kepek {
+  display: flex;
+  gap: 1.4rem;
+}
+
+.bizalom-kepek img {
+  width: 33.333%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 1.4rem;
+  box-shadow: 0 1rem 2rem rgba(70, 55, 45, .12);
+}
+
+
+/* MOBIL */
+@media (min-width: 300px) and (max-width: 768px) {
+  .fejlec {
+    min-height: 46vh;
+    padding: 3rem 1rem;
+  }
+
+  .fejlec-szoveg h1 {
+    font-size: 3rem;
+  }
+
+  .fejlec-szoveg span {
+    font-size: 1rem;
+  }
+
+  .oldal {
+    padding: 3.5rem 0;
+  }
+
+  .bemutatkozo-kartya {
+    flex-direction: column;
+    padding: 1.4rem;
+    gap: 1.8rem;
+    border-radius: 1.3rem;
+  }
+
+  .kep-doboz,
+  .szoveg-doboz {
+    width: 100%;
+  }
+
+  .kep-doboz img {
+    height: 380px;
+  }
+
+  .nagy-cim {
+    font-size: 2.1rem;
+  }
+
+  .gombok {
+    flex-direction: column;
+  }
+
+  .gombok a {
+    text-align: center;
+  }
+
+  .kepek,
+  .info-kartyak {
+    flex-direction: column;
+  }
+
+  .kepek img,
+  .info-kartya {
+    width: 100%;
+  }
+
+  .kepek img {
+    height: 260px;
+  }
+
+  .info {
+    padding: 1.4rem;
+    border-radius: 1.3rem;
+  }
+  .nagy-cim-kozep{
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .bizalom-kartya {
+  padding: 1.5rem;
+  border-radius: 1.3rem;
+}
+
+.bizalom-kepek {
+  flex-direction: column;
+}
+
+.bizalom-kepek img {
+  width: 100%;
+  height: 260px;
+}
+}
