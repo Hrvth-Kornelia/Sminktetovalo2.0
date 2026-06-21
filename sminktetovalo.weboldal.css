@@ -1,0 +1,390 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #faf7f5;
+  color: #3f3836;
+  font-family: Georgia, 'Times New Roman', serif;
+}
+
+.fejlec {
+  min-height: 55vh;
+  background:
+    linear-gradient(rgba(70, 55, 45, .35), rgba(70, 55, 45, .35)),
+    url("weboldal-hatterkep.jfif");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 4rem 2rem;
+}
+
+.fejlec-szoveg {
+  color: white;
+}
+
+.fejlec-szoveg p,
+.kis-cim {
+  letter-spacing: .35rem;
+  text-transform: uppercase;
+  color: #9a7b61;
+  font-size: .9rem;
+  margin-bottom: 1rem;
+}
+
+.fejlec-szoveg h1 {
+  font-size: clamp(2.5rem, 7.5vw, 6.5rem);
+  font-weight: 400;
+}
+
+.fejlec-szoveg span {
+  font-size: 1.3rem;
+}
+
+.oldal {
+  width: 92%;
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 6rem 0;
+}
+
+.bemutatkozo-kartya {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+  background: #fff;
+  padding: 4rem;
+  border-radius: 2rem;
+  box-shadow: 0 2rem 5rem rgba(70, 55, 45, .12);
+  margin-bottom: 7rem;
+}
+
+.kep-doboz,
+.szoveg-doboz {
+  width: 50%;
+}
+
+.kep-doboz img {
+  width: 100%;
+  height: 540px;
+  object-fit: cover;
+  object-position: center 25%;
+  
+  border-radius: 1.5rem;
+}
+
+.nagy-cim {
+  font-size: clamp(2rem, 3vw, 3rem);
+  line-height: 1.1;
+  margin-bottom: 1.5rem;
+}
+
+.leiras,
+.info-kartya p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #5f5754;
+}
+
+.gombok {
+  display: flex;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.gombok a {
+  text-decoration: none;
+  color: white;
+  background: #8a6f5a;
+  padding: .9rem 1.5rem;
+  border-radius: 999px;
+}
+
+.gombok a:nth-child(2) {
+  background: transparent;
+  color: #8a6f5a;
+  border: 1px solid #8a6f5a;
+}
+
+.kozep {
+  text-align: center;
+}
+
+.galeria {
+  margin-bottom: 7rem;
+}
+
+.kepek {
+  display: flex;
+  gap: 1.4rem;
+  margin-top: 3rem;
+}
+
+.kepek img {
+  width: 33.333%;
+  height: 360px;
+  object-fit: cover;
+  border-radius: 1.4rem;
+  box-shadow: 0 1rem 2rem rgba(70, 55, 45, .12);
+}
+
+.info {
+ background: linear-gradient(135deg, #e0d9d0, #d8cbbf);
+  padding: 4rem;
+  border-radius: 2rem;
+}
+.info-kartyak {
+  display: flex;
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.info-kartya {
+  width: 33.333%;
+   background: #f3e9e1;
+  padding: 2rem;
+  border-radius: 1.4rem;
+}
+
+.info-kartya span {
+  color: #dfd2be;
+   color: #b98d61;
+  font-size: 1.9rem;
+}
+
+.kartya-cim {
+  margin: 1rem 0;
+  font-size: 1.5rem !important;
+  color: #423b33 !important;
+}
+
+.bizalom-resz {
+  margin-bottom: 7rem;
+}
+
+.bizalom-kartya {
+  background: #fff;
+  padding: 4rem;
+  border-radius: 2rem;
+  box-shadow: 0 2rem 5rem rgba(70, 55, 45, .12);
+  margin-top: 3rem;
+}
+
+.bizalom-szoveg {
+  max-width: 700px;
+  margin: 0 auto 3rem;
+  text-align: center;
+}
+
+.bizalom-szoveg p:last-child {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #5f5754;
+}
+
+.bizalom-kepek {
+  display: flex;
+  gap: 1.4rem;
+}
+
+.bizalom-kepek img {
+  width: 33.333%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 1.4rem;
+  box-shadow: 0 1rem 2rem rgba(70, 55, 45, .12);
+}
+
+.kezeles-menete {
+  margin-bottom: 7rem;
+  padding: 4rem 0;
+}
+
+.kezeles-doboz {
+  background: linear-gradient(135deg, #363431, #433d39);
+  padding: 2rem;
+  border-radius: 2rem;
+  box-shadow: 0 2rem 6rem rgba(20, 15, 10, .28);
+  margin-top: 3rem;
+  border: 1px solid rgba(190, 145, 90, .35);
+}
+
+.kezeles-tartalom {
+  width: 100%;
+}
+
+.menet-sor {
+  display: grid;
+  grid-template-columns: 90px 1fr 43%;
+  gap: 2rem;
+  align-items: center;
+  padding: 2.8rem;
+  border-bottom: 1px solid rgba(190, 145, 90, .22);
+   background: linear-gradient(135deg, #e0d9d0, #d8cbbf);
+}
+
+.menet-sor:first-child {
+  border-radius: 1.5rem 1.5rem 0 0;
+}
+
+.menet-sor:last-child {
+  border-bottom: none;
+  border-radius: 0 0 1.5rem 1.5rem;
+}
+
+.menet-sor span {
+  font-size: 3.2rem;
+  color: #b98d61;
+  letter-spacing: .1rem;
+  font-weight: 400;
+}
+
+.menet-sor h3 {
+  font-size: 2rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
+  color: #3f3836;
+}
+
+.menet-sor p {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: #5f5754;
+}
+
+.kezeles-kep {
+  width: 90%;
+}
+
+.kezeles-kep img {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+  border-radius: 1.2rem;
+  box-shadow: 0 1.4rem 3rem rgba(40, 28, 20, .22);
+}
+
+@media (min-width: 300px) and (max-width: 768px) {
+  .kezeles-doboz {
+    padding: 1rem;
+    border-radius: 1.5rem;
+  }
+
+  .menet-sor {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1.5rem;
+    gap: 1.2rem;
+  }
+
+  .menet-sor span {
+    font-size: 2.2rem;
+  }
+
+  .menet-sor h3 {
+    font-size: 1.55rem;
+  }
+
+  .kezeles-kep {
+    order: -1;
+    width: 100%;
+  }
+
+  .kezeles-kep img {
+    height: 290px;
+  }
+}
+
+
+/* MOBIL */
+@media (min-width: 300px) and (max-width: 768px) {
+  .fejlec {
+    min-height: 46vh;
+    padding: 3rem 1rem;
+  }
+
+  .fejlec-szoveg h1 {
+    font-size: 3rem;
+  }
+
+  .fejlec-szoveg span {
+    font-size: 1rem;
+  }
+
+  .oldal {
+    padding: 3.5rem 0;
+  }
+
+  .bemutatkozo-kartya {
+    flex-direction: column;
+    padding: 1.4rem;
+    gap: 1.8rem;
+    border-radius: 1.3rem;
+  }
+
+  .kep-doboz,
+  .szoveg-doboz {
+    width: 100%;
+  }
+
+  .kep-doboz img {
+    height: 380px;
+  }
+
+  .nagy-cim {
+    font-size: 2.1rem;
+  }
+
+  .gombok {
+    flex-direction: column;
+  }
+
+  .gombok a {
+    text-align: center;
+  }
+
+  .kepek,
+  .info-kartyak {
+    flex-direction: column;
+     box-sizing: border-box;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .kepek img,
+  .info-kartya {
+    width: 100%;
+  }
+
+  .kepek img {
+    height: 260px;
+  }
+
+  .info {
+    padding: 1.4rem;
+    border-radius: 1.3rem;
+  }
+  .nagy-cim-kozep{
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .bizalom-kartya {
+  padding: 1.5rem;
+  border-radius: 1.3rem;
+}
+
+.bizalom-kepek {
+  flex-direction: column;
+}
+
+.bizalom-kepek img {
+  width: 100%;
+  height: 260px;
+}
+}
