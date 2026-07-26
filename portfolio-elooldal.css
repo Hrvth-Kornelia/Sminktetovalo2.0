@@ -1,0 +1,583 @@
+/* =========================================
+   LUXÓRIA PORTFÓLIÓ OLDAL
+   Mobil-first: 300px-től desktop méretig
+   ========================================= */
+
+:root {
+    --paper: #f8f4ef;
+    --paper-strong: #fffdf9;
+
+    --ink: #332d29;
+
+    --taupe: #a98d78;
+    --champagne: #c8aa8e;
+
+    --white: #fffdf9;
+
+    --header-height: 116px;
+}
+
+
+/* ALAPBEÁLLÍTÁSOK */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+
+    min-width: 300px;
+
+    background: #171311;
+    color: var(--white);
+
+    font-family:
+        "Montserrat",
+        Arial,
+        sans-serif;
+}
+
+
+/* =========================================
+   FEJLÉC
+   ========================================= */
+
+.luxoria-header {
+    position: sticky;
+    top: 0;
+    z-index: 20;
+
+    min-height: var(--header-height);
+
+    padding:
+        20px
+        clamp(16px, 4vw, 54px);
+
+    display: grid;
+
+    grid-template-columns:
+        minmax(86px, 1fr)
+        auto
+        minmax(86px, 1fr);
+
+    align-items: center;
+
+    gap: 12px;
+
+    background:
+        radial-gradient(
+            circle at 50% 0%,
+            rgba(218, 191, 166, 0.17),
+            transparent 42%
+        ),
+        var(--paper);
+
+    border-bottom:
+        1px solid
+        rgba(91, 72, 58, 0.12);
+}
+
+
+/* FŐOLDAL GOMB */
+
+.home-button {
+    justify-self: start;
+
+    min-height: 54px;
+
+    padding:
+        0
+        17px;
+
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 9px;
+
+    color: #927764;
+
+    background:
+        rgba(255, 253, 249, 0.58);
+
+    border:
+        1px solid
+        rgba(158, 123, 98, 0.72);
+
+    border-radius: 6px;
+
+    text-decoration: none;
+
+    font-size:
+        clamp(13px, 3.6vw, 17px);
+
+    font-weight: 500;
+
+    box-shadow:
+        inset 0 1px 0 rgba(255, 255, 255, 0.9),
+        0 7px 18px rgba(88, 63, 48, 0.05);
+
+    transition:
+        transform 0.25s ease,
+        background 0.25s ease;
+}
+
+.home-button:hover {
+    transform: translateY(-2px);
+
+    background: var(--paper-strong);
+}
+
+.home-icon {
+    font-size: 22px;
+    line-height: 1;
+}
+
+
+/* LOGÓ */
+
+.brand {
+    position: relative;
+
+    justify-self: center;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    color: #aa8e79;
+
+    text-decoration: none;
+
+    white-space: nowrap;
+}
+
+.brand-star {
+    position: absolute;
+
+    top: -13px;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    font-size: 9px;
+
+    color: #c4a488;
+}
+
+.brand-name {
+    font-family:
+        "Bodoni Moda",
+        Didot,
+        serif;
+
+    font-size:
+        clamp(26px, 7.4vw, 42px);
+
+    font-weight: 400;
+
+    line-height: 1;
+
+    letter-spacing: 0.25em;
+
+    padding-left: 0.25em;
+}
+
+.brand-subtitle {
+    margin-top: 10px;
+
+    font-size:
+        clamp(7px, 2vw, 11px);
+
+    letter-spacing: 0.52em;
+
+    padding-left: 0.52em;
+
+    color: #ad9b8d;
+}
+
+.header-balance {
+    min-width: 86px;
+}
+
+
+/* =========================================
+   PORTFÓLIÓ
+   ========================================= */
+
+.portfolio {
+    width: 100%;
+}
+
+.portfolio-card {
+    position: relative;
+
+    isolation: isolate;
+
+    min-height:
+        clamp(440px, 75vh, 760px);
+
+    display: flex;
+
+    align-items: center;
+
+    overflow: hidden;
+
+    background-size: cover;
+
+    background-repeat: no-repeat;
+
+    background-position: center;
+
+    border-bottom:
+        1px solid
+        rgba(255, 255, 255, 0.08);
+}
+
+
+/* BAL OLDALI SÖTÉT ÁTMENET */
+
+.portfolio-card::before {
+    content: "";
+
+    position: absolute;
+
+    inset: 0;
+
+    z-index: -1;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(16, 12, 10, 0.91) 0%,
+            rgba(18, 13, 11, 0.77) 22%,
+            rgba(18, 13, 11, 0.30) 47%,
+            rgba(18, 13, 11, 0.02) 72%
+        );
+}
+
+
+/* FINOM FELSŐ-ALSÓ ÁRNYÉK */
+
+.portfolio-card::after {
+    content: "";
+
+    position: absolute;
+
+    inset: 0;
+
+    z-index: -1;
+
+    background:
+        linear-gradient(
+            180deg,
+            rgba(0, 0, 0, 0.06),
+            transparent 24%,
+            transparent 76%,
+            rgba(0, 0, 0, 0.16)
+        );
+
+    pointer-events: none;
+}
+
+
+/* KÉPEK */
+
+.portfolio-card--brows {
+    background-image:
+        url("elolap1portfolio.jpg");
+
+    background-position:
+        30% center;
+}
+
+.portfolio-card--lips {
+    background-image:
+        url("elolap2portfolio.jpg ");
+
+    background-position:
+        64% center;
+}
+
+.portfolio-card--liner {
+    background-image:
+        url("elolap3portfolio.jpg ");
+
+    background-position:
+        62% center;
+}
+
+
+/* SZÖVEGES RÉSZ */
+
+.portfolio-copy {
+    width:
+        min(82%, 520px);
+
+    margin-left:
+        clamp(26px, 6vw, 92px);
+
+    padding:
+        48px 0;
+}
+
+
+/* KIS FELSŐ FELIRAT */
+
+.eyebrow {
+    margin:
+        0 0 20px;
+
+    font-size:
+        clamp(8px, 2.2vw, 12px);
+
+    font-weight: 500;
+
+    letter-spacing: 0.24em;
+
+    text-transform: uppercase;
+
+    color:
+        rgba(255, 250, 245, 0.80);
+}
+
+
+/* NAGY CÍMEK */
+
+.portfolio-copy h1,
+.portfolio-copy h2 {
+    margin: 0;
+
+    font-family:
+        "Bodoni Moda",
+        Didot,
+        serif;
+
+    font-size:
+        clamp(42px, 11vw, 76px);
+
+    font-weight: 400;
+
+    line-height: 1.04;
+
+    letter-spacing: -0.025em;
+
+    color: #fffaf5;
+
+    text-shadow:
+        0 2px 24px
+        rgba(0, 0, 0, 0.18);
+}
+
+
+/* RÉSZLETEK LINK */
+
+.details-link {
+    width: fit-content;
+
+    margin-top: 34px;
+
+    display: inline-flex;
+
+    flex-direction: column;
+
+    gap: 13px;
+
+    color:
+        rgba(255, 250, 245, 0.84);
+
+    text-decoration: none;
+
+    text-transform: uppercase;
+
+    font-size:
+        clamp(8px, 2.3vw, 11px);
+
+    letter-spacing: 0.22em;
+}
+
+.details-line {
+    width: 82px;
+    height: 1px;
+
+    background:
+        var(--champagne);
+
+    transform-origin: left;
+
+    transition:
+        width 0.28s ease;
+}
+
+.details-link:hover .details-line {
+    width: 132px;
+}
+
+
+/* =========================================
+   KISEBB MOBILOK
+   ========================================= */
+
+@media (max-width: 430px) {
+
+    :root {
+        --header-height: 106px;
+    }
+
+    .luxoria-header {
+        padding:
+            18px
+            14px;
+
+        grid-template-columns:
+            84px
+            1fr
+            84px;
+    }
+
+    .home-button {
+        min-height: 48px;
+
+        padding:
+            0
+            12px;
+
+        gap: 6px;
+    }
+
+    .brand-name {
+        font-size:
+            clamp(23px, 7.1vw, 31px);
+    }
+
+    .brand-subtitle {
+        letter-spacing: 0.38em;
+
+        padding-left: 0.38em;
+    }
+
+    .portfolio-card {
+        min-height: 500px;
+    }
+
+    .portfolio-copy {
+        width: 74%;
+
+        margin-left: 26px;
+    }
+
+    .portfolio-copy h1,
+    .portfolio-copy h2 {
+        font-size:
+            clamp(38px, 11.5vw, 52px);
+    }
+}
+
+
+/* =========================================
+   TABLET
+   ========================================= */
+
+@media (min-width: 700px) {
+
+    .portfolio-card {
+        min-height: 680px;
+    }
+
+    .portfolio-copy {
+        width:
+            min(47%, 580px);
+    }
+}
+
+
+/* =========================================
+   DESKTOP
+   ========================================= */
+
+@media (min-width: 1050px) {
+
+    :root {
+        --header-height: 126px;
+    }
+
+    .luxoria-header {
+        position: sticky;
+
+        padding-inline:
+            clamp(42px, 5vw, 86px);
+    }
+
+    .home-button {
+        min-width: 138px;
+
+        justify-content: center;
+    }
+
+    .portfolio-card {
+        min-height:
+            calc(100vh - var(--header-height));
+
+        background-attachment: fixed;
+    }
+
+    .portfolio-copy {
+        margin-left:
+            clamp(72px, 9vw, 150px);
+    }
+
+    .portfolio-card::before {
+        background:
+            linear-gradient(
+                90deg,
+                rgba(14, 10, 8, 0.92) 0%,
+                rgba(18, 13, 11, 0.76) 25%,
+                rgba(18, 13, 11, 0.25) 48%,
+                transparent 70%
+            );
+    }
+}
+
+
+/* =========================================
+   NAGY DESKTOP
+   ========================================= */
+
+@media (min-width: 1500px) {
+
+    .portfolio-card {
+        min-height: 900px;
+
+        background-size: cover;
+    }
+
+    .portfolio-copy h1,
+    .portfolio-copy h2 {
+        font-size: 88px;
+    }
+}
+
+
+/* =========================================
+   MOZGÁSCSÖKKENTÉS
+   ========================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    html {
+        scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+        transition: none !important;
+    }
+}
