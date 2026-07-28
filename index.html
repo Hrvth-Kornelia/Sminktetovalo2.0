@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Kornélia's Card</title>
+<link rel="manifest" href="manifest.json"> 
+ 
+<!-- App színek -->
+<meta name="theme-color" content="#ffffff">
+<meta name="background-color" content="#ffffff">
+
+<!-- iOS támogatás -->
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Az app neve">
+<link rel="apple-touch-icon" href="icon.192.jfif">
+
+<!-- Android ikon (manifest.json-ban is meg kell lennie) -->
+<link rel="icon" type="image/jpeg" sizes="192x192" href="icon.192.jfif ">
+<link rel="icon" type="image/jpeg" sizes="512x512" href="icon.512.jfif">
+
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.12.1/font/bootstrap-icons.min.css"> 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Damion&family=Dancing+Script&family=Edu+NSW+ACT+Hand+Pre:wght@400..700&family=Itim&family=Lilita+One&family=Lora:ital,wght@0,400..700;1,400..700&family=Moon+Dance&family=Oswald:wght@200..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@400;500;600&display=swap" rel="stylesheet">
+<link id="main-css" rel="stylesheet" href="uj-index.css">
+</head>
+<body>
+
+ <section class="profile-hero">
+<div class="profile-photo">
+<img src="ujindex-profil.jpg" alt="Sienna Bloom">
+</div>
+<div class="profile-content">
+<p class="profile-label">LUXÓRIA BEAUTY ART</p>
+<h1>Sienna Bloom</h1>
+
+<div class="profile-title-row">
+<h2>Sminktetováló Mester</h2>
+<button
+        id="pushupbutton"
+        class="push-button"
+        type="button"
+        aria-label="Értesítések bekapcsolása">
+        <i class="bi bi-bell-fill"></i>
+        <span>Értesítések</span>
+    </button>
+</div>
+
+<p class="profile-salon">Tulajdonos • Edeen's Salon</p>
+<div class="social-buttons">
+<a href="https://instagram.com/">
+<i class="bi bi-instagram"></i>
+<span>Instagram</span>
+</a>
+<a href="https://facebook.com/">
+<i class="bi bi-facebook"></i>
+<span>Facebook</span>
+</a>
+<button type="button" id="shareButton">
+<i class="bi bi-send-fill"></i>
+<span>Megosztás</span>
+</button>
+</div>
+<div class="main-buttons">
+<a href="#" class="website-button">
+<i class="bi bi-globe2"></i>
+<span>Weboldalam</span>
+</a>
+<a href="tel:+36123456789" class="call-button">
+<i class="bi bi-telephone-fill"></i>
+<span>Hívás</span>
+</a>
+</div>
+</div>
+</section>
+
+<section class="quick-menu">
+<div class="quick-menu-header">
+<h2>Gyors menü</h2>
+</div>
+<div class="quick-menu-grid">
+<a href="sminktetovalo.arlista.html" class="quick-card">
+<span class="quick-icon">
+<i class="bi bi-card-list"></i>
+</span>
+<span class="quick-text">
+<strong>Árlista</strong>
+<small>Szolgáltatások és árak</small>
+</span>
+</a>
+
+<a href="sminktetovalo-akcio.html" class="quick-card">
+<span class="quick-icon">
+<i class="bi bi-percent"></i>
+</span>
+<span class="quick-text">
+<strong>Akciók</strong>
+<small>Aktuális ajánlatok</small>
+</span>
+</a>
+
+<a href="portfolio-elooldal.html" class="quick-card">
+<span class="quick-icon">
+<i class="bi bi-images"></i>
+</span>
+<span class="quick-text">
+<strong>Portfólió</strong>
+<small>Munkáim</small>
+</span>
+</a>
+
+<a href="sminktetovalo.nyitvatartas.html" class="quick-card">
+<span class="quick-icon">
+<i class="bi bi-clock"></i>
+</span>
+<span class="quick-text">
+<strong>Nyitvatartás</strong>
+<small>Munkaidő</small>
+</span>
+</a>
+
+<a href="#kapcsolat" class="quick-card">
+<span class="quick-icon">
+<i class="bi bi-telephone"></i>
+</span>
+<span class="quick-text">
+<strong>Kapcsolat</strong>
+<small>Elérhetőségek</small>
+</span>
+</a>
+
+<a href="#velemenyek" class="quick-card">
+<span class="quick-icon">
+<i class="bi bi-chat-heart"></i>
+</span>
+<span class="quick-text">
+<strong>Vélemények</strong>
+<small>Vendégek értékelései</small>
+</span>
+</a>
+</div>
+</section>
+
+<script>
+const shareButton=document.getElementById("shareButton");
+
+if(shareButton){
+shareButton.addEventListener("click",async()=>{
+try{
+if(navigator.share){
+await navigator.share({
+title:"Luxória Beauty Art",
+text:"Sienna Bloom – Sminktetováló Mester",
+url:window.location.href
+});
+}else{
+await navigator.clipboard.writeText(window.location.href);
+alert("A linket kimásoltuk.");
+}
+}catch(error){
+console.log("A megosztás megszakadt.");
+}
+});
+}
+</script>
+
+<script type="module" src="./sminktetovalo.js"></script>
+<script type="module" src="./pushup.js"></script>
+</body>   
+
