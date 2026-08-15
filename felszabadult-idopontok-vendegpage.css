@@ -1,0 +1,365 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: #f8f4f0;
+    color: #2d1c17;
+    font-family: Arial, sans-serif;
+}
+
+
+/* =========================
+   BARNA FEJLÉC
+========================= */
+
+.fejlec {
+    min-height: 120px;
+    padding: env(safe-area-inset-top) 5% 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #351f18;
+    color: white;
+}
+
+
+/* VISSZA / FŐOLDAL GOMB */
+
+.vissza-gomb {
+    padding: 14px 24px;
+    border: 1px solid #c38a63;
+    border-radius: 12px;
+    color: white;
+    text-decoration: none;
+    font-family: Georgia, serif;
+    font-size: 18px;
+}
+
+.vissza-gomb:hover {
+    color: white;
+}
+
+
+/* SIENNA BLOOM */
+
+.bejelentkezes {
+    font-size: 18px;
+    line-height: 25px;
+    font-family: bodoni moda;
+    letter-spacing: 1px;
+     border: 1px solid #c38a63;
+    border-radius: 12px;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    cursor: pointer;
+}
+.bejelentkezes:hover{
+    color: #f1d9b3;
+}
+
+
+/* =========================
+   FŐ OLDAL
+========================= */
+
+.szabad-idopontok-oldal {
+    width: 90%;
+    max-width: 760px;
+
+    margin: 80px auto;
+
+    text-align: center;
+}
+
+.szabad-idopontok-oldal h1 {
+    margin: 0;
+
+    font-family: Georgia, serif;
+    font-size: 32px;
+    font-weight: 400;
+}
+
+
+/* ARANY VONAL */
+
+.arany-vonal {
+    width: 60px;
+    height: 1px;
+
+    margin: 28px auto;
+
+    background: #b58a4a;
+}
+
+
+/* ALCÍM */
+
+.alcim {
+    margin-bottom: 40px;
+
+    color: #8e7a70;
+
+    font-family: Georgia, serif;
+    font-size: 18px;
+}
+
+
+/* =========================
+   IDŐPONTOK LISTÁJA
+========================= */
+
+#vendegIdopontLista {
+    width: 100%;
+}
+
+.vendeg-idopont-sor {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 25px;
+
+    width: 100%;
+
+    margin-bottom: 12px;
+    padding: 20px;
+
+    background: white;
+
+    border: 1px solid #ddd2ca;
+    border-radius: 8px;
+
+    box-shadow: 0 4px 14px rgba(45, 28, 23, 0.05);
+
+    font-family: Georgia, serif;
+    font-size: 17px;
+}
+
+.vendeg-idopont-sor strong {
+    font-weight: 500;
+}
+
+.vendeg-idopont-sor span {
+    color: #765f55;
+}
+
+
+/* =========================
+   HA NINCS IDŐPONT
+========================= */
+
+.ures-lista {
+    margin: 0;
+    padding: 25px;
+
+    color: #8e7a70;
+
+    font-family: Georgia, serif;
+    font-size: 16px;
+}
+
+
+/* =========================
+   ALSÓ DÍSZ
+========================= */
+
+.lotusz {
+    margin-top: 55px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 20px;
+
+    color: #b58a4a;
+}
+
+.lotusz span {
+    width: 120px;
+    height: 1px;
+
+    background: #d7c5b5;
+}
+
+.lotusz div {
+    font-size: 34px;
+}
+
+
+/* =========================
+   MOBIL NÉZET
+========================= */
+
+@media (max-width: 600px) {
+
+    /* FEJLÉC */
+
+    .fejlec {
+        min-height: calc(72px + env(safe-area-inset-top));
+        padding: env(safe-area-inset-top) 14px 0;
+    }
+
+    .vissza-gomb {
+        padding: 8px 12px;
+
+        border-radius: 9px;
+
+        font-size: 13px;
+    }
+
+    .bejelentkezes{
+        font-size: 14px;
+    }
+
+
+    /* OLDAL */
+
+    .szabad-idopontok-oldal {
+        width: calc(100% - 24px);
+
+        margin: 75px auto 30px;
+    }
+
+    .szabad-idopontok-oldal h1 {
+        font-size: 23px;
+        line-height: 1.15;
+    }
+
+    .arany-vonal {
+        width: 42px;
+
+        margin: 18px auto;
+    }
+
+    .alcim {
+        margin-bottom: 28px;
+
+        font-size: 13px;
+        line-height: 1.4;
+    }
+
+
+    /* IDŐPONTOK */
+
+    .vendeg-idopont-sor {
+        gap: 15px;
+
+        padding: 16px;
+
+        font-size: 14px;
+
+        border-radius: 8px;
+    }
+
+    .ures-lista {
+        padding: 20px 10px;
+
+        font-size: 13px;
+    }
+
+
+    /* ALSÓ DÍSZ */
+
+    .lotusz {
+        margin-top: 34px;
+
+        gap: 14px;
+    }
+
+    .lotusz span {
+        width: 55px;
+    }
+
+    .lotusz div {
+        font-size: 26px;
+    }
+}
+
+
+/* =========================
+   KICSI TELEFON
+   300–350PX
+========================= */
+
+@media (max-width: 350px) {
+
+    .fejlec {
+        min-height: calc(64px + env(safe-area-inset-top));
+        padding: env(safe-area-inset-top) 10px 0;
+    }
+
+    .vissza-gomb {
+        padding: 7px 10px;
+
+        border-radius: 8px;
+
+        font-size: 12px;
+    }
+
+    .bejelentkezes {
+        font-size: 12px;
+    }
+
+
+    /* OLDAL */
+
+    .szabad-idopontok-oldal {
+        width: calc(100% - 16px);
+
+        margin: 65px auto 25px;
+    }
+
+    .szabad-idopontok-oldal h1 {
+        font-size: 21px;
+        line-height: 1.15;
+    }
+
+    .arany-vonal {
+        width: 38px;
+
+        margin: 16px auto;
+    }
+
+    .alcim {
+        margin-bottom: 24px;
+
+        font-size: 12px;
+        line-height: 1.4;
+    }
+
+
+    /* IDŐPONTOK */
+
+    .vendeg-idopont-sor {
+        gap: 10px;
+
+        padding: 14px 10px;
+
+        font-size: 12px;
+    }
+
+    .ures-lista {
+        font-size: 12px;
+    }
+
+
+    /* ALSÓ DÍSZ */
+
+    .lotusz {
+        margin-top: 28px;
+
+        gap: 10px;
+    }
+
+    .lotusz span {
+        width: 45px;
+    }
+
+    .lotusz div {
+        font-size: 23px;
+    }
+}
